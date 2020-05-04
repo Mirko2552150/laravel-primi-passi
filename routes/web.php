@@ -13,6 +13,12 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', function () { // funzione che accetta dei parametri, GET POST DELETE
+    // return view('welcome'); // pagina di base, ritorna qualcosa
+    return view('users/index'); // percorso con dot notation
+    // return 'ciao classe 10';
+})->name('index');
+
+Route::get('/home', function () {
+  return view('home'); // va a cercare il ns file home
+})->name('home'); // abbiamo creato un nome alla route
