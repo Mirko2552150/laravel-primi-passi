@@ -1,1 +1,29 @@
 //
+@import 'partials/_variables';
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  background-color: white;
+  text-align: center;
+  .main-menu {
+    text-decoration: none;
+    li {
+      display: inline-block;
+      a {
+        color: $link_main_color;
+      }
+    }
+  }
+}
