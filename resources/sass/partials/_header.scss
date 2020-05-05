@@ -1,0 +1,13 @@
+header {
+  background-color: white;
+  text-align: center;
+  .main-menu {
+    text-decoration: none;
+    li {
+      display: inline-block;
+      a {
+        color: $link_main_color;
+      }
+    }
+  }
+}

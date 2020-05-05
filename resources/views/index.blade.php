@@ -6,8 +6,7 @@
     <title>Document</title>
   </head>
   <body>
-    <main>
-      <a href="{{'home'}}">Home</a> 
-    </main>
+    @include('partials.header');
+    @include('partials.footer');
   </body>
 </html>
