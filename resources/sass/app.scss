@@ -1,8 +1,15 @@
-//
-@import '_variables';
-@import '_reset';
-@import '_common';
-@import '_mixins';
-@import 'partials/_header';
+/* DIVIDO I COMMENTI PER ORGANIZZARE IL CSS VISIBILMENTE CON IMPORT LINKIATO I FILE DA "COMPORRE" */
+/* VARIABLES */
+@import "_variables.scss";
+/* MIXIN */
+@import "_mixins.scss";
+/* RESET */
+@import "_reset.scss";
+/* COMMON */
+@import "_common.scss";
+/* HEADER */
+@import 'partials/_header'; // Questo commento non è visibile in css
+/* MAIN */
 @import 'partials/_main';
+/* FOOTER */
 @import 'partials/_footer';

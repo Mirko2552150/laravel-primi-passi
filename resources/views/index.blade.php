@@ -3,10 +3,11 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>Index La molisana</title>
+    <link rel="stylesheet" href="{{asset('css/app.css')}}">
   </head>
   <body>
-    @include('partials.header');
-    @include('partials.footer');
+    @include('partials.header')
+    @include('partials.footer')
   </body>
 </html>

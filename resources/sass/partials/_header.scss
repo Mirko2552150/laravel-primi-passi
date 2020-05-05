@@ -5,8 +5,10 @@ header {
     text-decoration: none;
     li {
       display: inline-block;
+      padding: 10px;
       a {
         color: $link_main_color;
+        font-weight: bold;
       }
     }
   }

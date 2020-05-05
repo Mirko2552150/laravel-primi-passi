@@ -1,3 +1,11 @@
+/* DIVIDO I COMMENTI PER ORGANIZZARE IL CSS VISIBILMENTE CON IMPORT LINKIATO I FILE DA "COMPORRE" */
+
+/* VARIABLES */
+
+/* MIXIN */
+
+/* RESET */
+
 * {
   margin: 0;
   padding: 0;
@@ -12,11 +20,16 @@
 
 a {
   text-decoration: none;
+  color: black;
 }
 
+/* COMMON */
+
 body {
-  font-family: "Roboto";
+  font-family: sans-serif;
 }
+
+/* HEADER */
 
 header {
   background-color: white;
@@ -29,9 +42,82 @@ header .main-menu {
 
 header .main-menu li {
   display: inline-block;
+  padding: 10px;
 }
 
 header .main-menu li a {
   color: black;
+  font-weight: bold;
+}
+
+/* MAIN */
+
+main {
+  background-color: white;
+}
+
+main h2 {
+  margin-left: 20px;
+}
+
+main .cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+main .cards .card {
+  flex-basis: calc(100% - 40px);
+  position: relative;
+  margin: 20px;
+  overflow: hidden;
+  border-radius: 20px;
+  transition-duration: 1s;
+}
+
+@media only screen and (min-width: 480px) {
+  main .cards .card {
+    flex-basis: calc(100% / 2 - 40px);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  main .cards .card {
+    flex-basis: calc(100% / 3 - 40px);
+  }
+}
+
+main .cards .card:hover .card-link {
+  opacity: 1;
+}
+
+main .cards .card img {
+  width: 100%;
+  display: block;
+  transition-duration: 1s;
+}
+
+main .cards .card img:hover {
+  transform: scale(1.15);
+}
+
+main .cards .card .card-link {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  opacity: 0;
+  transition-duration: 1s;
+}
+
+main .cards .card .card-link h3 {
+  padding-bottom: 10px;
+}
+
+/* FOOTER */
+
+footer {
+  height: 40px;
+  background-color: black;
 }
 
