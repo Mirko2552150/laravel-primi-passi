@@ -116,8 +116,24 @@ main .cards .card .card-link h3 {
 
 /* FOOTER */
 
-footer {
-  height: 40px;
-  background-color: black;
+footer .box-col {
+  display: flex;
+  flex-wrap: wrap;
+  background-image: url("https://www.lamolisana.it/wp-content/uploads/2017/10/footer-montagne-bottom.jpg");
+  background-repeat: no-repeat;
+  background-position: bottom;
+  background-size: contain;
+}
+
+footer .box-col .col {
+  margin: 10px;
+  flex-basis: calc(100% - 20px);
+  text-align: center;
+}
+
+@media only screen and (min-width: 768px) {
+  footer .box-col .col {
+    flex-basis: calc(100% / 3 - 40px);
+  }
 }
 
