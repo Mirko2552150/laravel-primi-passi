@@ -1,4 +1,3 @@
-
 <header>
   <img class="logo" src="{{'img/marchio-sito-test.png'}}" alt="La Molisana">
   <nav class="header-nav">
