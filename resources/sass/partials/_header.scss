@@ -3,6 +3,11 @@ header {
   text-align: center;
   .main-menu {
     text-decoration: none;
+    .active {
+      a {
+        color: red;
+      }
+    }
     li {
       display: inline-block;
       padding: 10px;
