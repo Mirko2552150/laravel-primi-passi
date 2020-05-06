@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="{{ str_replace('_', '-', app()->getLocale()) }}">
   <head>
     <meta charset="utf-8">
@@ -10,4 +10,17 @@
     @include('partials.header')
     @include('partials.footer')
   </body>
-</html>
+</html> --}}
+@extends('layoutuser.layout')
+
+@section('titolo')
+  Home
+@endsection
+
+@section('css')
+  {{-- css prodotti --}}
+@endsection
+
+@section('main-content')
+  {{-- da inserire main --}}
+@endsection

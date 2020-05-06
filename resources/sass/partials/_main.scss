@@ -1,12 +1,11 @@
-.box-main {
-  main {
+main {
+  .box {
     background-image: url('../../img/sfondo.jpg');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     h2 {
       margin-left: 20px;
-
     }
     background-color: white;
     .cards {

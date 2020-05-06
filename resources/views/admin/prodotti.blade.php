@@ -18,8 +18,8 @@
   }
   // dd($lunghe, $corte, $cortissime);
 @endphp
-{{-- Prendo il template, includo il partials.main e gli inserisco il PHP sopra  --}}
-@extends('layoutuser.layout')
+
+@extends('layoutadmin.layoutadmin')
 
 @section('titolo')
   Prodotti
@@ -29,6 +29,23 @@
   {{-- css prodotti --}}
 @endsection
 
-@section('main-content')
-  @include('partials.main')
+@section('main')
+  <table>
+    <thead>
+      <tr>
+        <th>Nome prodotto</th>
+        <th>Descrizione</th>
+        <th>Tipo</th>
+      </tr>
+    </thead>
+    <tbody>
+      @foreach ($cards as $key => $prodotto)
+        <tr>
+          <td>{{$prodotto['titolo']}}</td>
+          <td>{!!$prodotto['descrizione']!!}</td>
+          <td>{{$prodotto['tipo']}}</td>
+        </tr>
+      @endforeach
+    </tbody>
+  </table>
 @endsection

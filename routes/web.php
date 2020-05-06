@@ -26,3 +26,7 @@ Route::get('/prodotti', function () {
 Route::get('/news', function () {
   return view('news'); // va a cercare il ns file home
 })->name('news'); // abbiamo creato un nome alla route
+
+Route::get('/prodotti-admin', function () {
+  return view('/admin/prodotti'); // va a cercare il ns file home
+})->name('prodotti-admin'); // abbiamo creato un nome alla route
