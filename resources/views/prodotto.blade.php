@@ -2,6 +2,7 @@
   $cards = config('dataprodotti'); // richiamo con config il file dataprodotti decode e lo assegno ad un var
   // dd($cards);
   $prodotto = $cards[$id];
+  echo url()->current();
 
 @endphp
 {{-- Prendo il template, includo il partials.main e gli inserisco il PHP sopra  --}}
@@ -17,7 +18,9 @@
 
 @section('main-content')
   <div class="box-prodotto">
+    <a href=""><i class="fas fa-chevron-left"></i></a>
     <img src="{{$prodotto['src']}}" alt="{{$prodotto['src']}}">
+    <a href=""><i class="fas fa-chevron-right"></i></a>
     <h3>{{$prodotto['titolo']}}</h3>
     <p><strong>Tipo: </strong></p>
     <p>{{$prodotto['tipo']}}</p>

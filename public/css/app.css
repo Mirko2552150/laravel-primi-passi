@@ -129,12 +129,31 @@ main .box .cards .card .card-link h3 {
 
 main .box-prodotto {
   text-align: center;
+  position: relative;
 }
 
 main .box-prodotto img {
   width: 100%;
   margin: 0 auto;
   padding-bottom: 50px;
+}
+
+main .box-prodotto .fa-chevron-left {
+  position: absolute;
+  padding: 10px;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 80px;
+}
+
+main .box-prodotto .fa-chevron-right {
+  position: absolute;
+  padding: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 0;
+  font-size: 80px;
 }
 
 /* FOOTER */
