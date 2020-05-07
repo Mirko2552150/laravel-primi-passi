@@ -1,4 +1,6 @@
 main {
+  padding-top: 70px;
+  padding-bottom: 100px;
   .box {
     background-image: url('../../img/sfondo.jpg');
     background-position: center;
@@ -50,6 +52,17 @@ main {
           }
         }
       }
+    }
+  }
+  .box-prodotto {
+    text-align: center;
+    img {
+      width: 100%;
+      margin: 0 auto;
+      padding-bottom: 50px;
+    }
+    p:lastchild {
+
     }
   }
 }

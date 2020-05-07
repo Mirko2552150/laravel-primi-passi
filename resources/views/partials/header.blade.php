@@ -1,5 +1,5 @@
 <header>
-  <img class="logo" src="{{'img/marchio-sito-test.png'}}" alt="La Molisana">
+  <img class="logo" src="{{"img/marchio-sito-test.png"}}" alt="La Molisana">
   <nav class="header-nav">
     <ul class="main-menu">
       <li class="{{(url()->current() == route('index')) ? 'active' : ''}}">

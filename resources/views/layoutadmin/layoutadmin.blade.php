@@ -12,7 +12,6 @@
       @yield('main')
     </main>
     
-
     @yield('scripts')
   </body>
 </html>

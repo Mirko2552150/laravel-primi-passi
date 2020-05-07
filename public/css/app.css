@@ -56,6 +56,11 @@ header .main-menu li a {
 
 /* MAIN */
 
+main {
+  padding-top: 70px;
+  padding-bottom: 100px;
+}
+
 main .box {
   background-image: url(/images/sfondo.jpg?00a917a9de0c49fcedc00f533a6f0b44);
   background-position: center;
@@ -120,6 +125,16 @@ main .box .cards .card .card-link {
 
 main .box .cards .card .card-link h3 {
   padding-bottom: 10px;
+}
+
+main .box-prodotto {
+  text-align: center;
+}
+
+main .box-prodotto img {
+  width: 100%;
+  margin: 0 auto;
+  padding-bottom: 50px;
 }
 
 /* FOOTER */

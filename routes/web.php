@@ -23,6 +23,10 @@ Route::get('/prodotti', function () {
   return view('prodotti'); // va a cercare il ns file home
 })->name('prodotti'); // abbiamo creato un nome alla route
 
+Route::get('/prodotti/{id}', function ($id) {
+  return view('prodotto' , compact('id')); // va a cercare il ns file home
+})->name('prodotti.show'); // abbiamo creato un nome alla route
+
 Route::get('/news', function () {
   return view('news'); // va a cercare il ns file home
 })->name('news'); // abbiamo creato un nome alla route
